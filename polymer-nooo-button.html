@@ -1,0 +1,23 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<polymer-element name="polymer-nooo-button">
+  <template>
+    <link rel="stylesheet" href="polymer-nooo-button.css">
+    <div id="nooo" class="nooo" on-click="{{noooEvent}}">
+      <audio id="audio">
+        <source src="Nooo.mp3" type="audio/mp3">
+        <source src="Nooo.ogg" type="audio/ogg">
+        <source src="Nooo.mp4" type="audio/mp4">
+      </audio>
+    </div>
+  </template>
+  <script>
+    Polymer('polymer-nooo-button', {
+      applyAuthorStyles: true,
+      noooEvent: function (event) {
+        var audio = this.$.audio;
+        audio.play();
+      }
+    });
+  </script>
+</polymer-element>
