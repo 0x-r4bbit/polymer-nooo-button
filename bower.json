@@ -4,5 +4,8 @@
     "polymer": "Polymer/polymer#master",
     "platform": "Polymer/platform#~0.1.1",
     "love-heart": "~0.1.1"
-  }
+  },
+  "keywords": [
+    "web-components"
+  ]
 }
